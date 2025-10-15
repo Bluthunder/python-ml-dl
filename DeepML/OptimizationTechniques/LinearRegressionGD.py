@@ -11,7 +11,7 @@ def linear_regression_gradient_descent(X, y, alpha, iterations) -> torch.Tensor:
     y_t = torch.as_tensor(y, dtype=torch.float).reshape(-1,1)
     m, n = X_t.shape
     theta = torch.zeros((n,1), requires_grad=True)
-    # Your implementation here
+
 
     for _ in range(iterations):
         # Predictions
@@ -29,5 +29,3 @@ def linear_regression_gradient_descent(X, y, alpha, iterations) -> torch.Tensor:
 
         # Zero gradients for next iteration
         theta.grad.zero_()
-
-    # Round to 4 d
