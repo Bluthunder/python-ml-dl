@@ -10,7 +10,7 @@ from typing import List
 
 
 # NAIVE METHOD WITHOUT ANY OPTIMIZATION
-def move_zeroes(arr:List)->List:
+def move_zeroes(arr:List[int])->List[int]:
     n = len(arr)
     results = [0] * n
 
@@ -31,7 +31,7 @@ def move_zeroes(arr:List)->List:
 
 
 # This does not use an extra array
-def move_zeroes_optimization(arr: List)->List:
+def move_zeroes_optimization(arr: List[int])->List[int]:
     n = len(arr)
 
     writePos = 0
@@ -48,7 +48,7 @@ def move_zeroes_optimization(arr: List)->List:
     return arr
 
 
-def move_zeroes_further_optimized(arr: List)->List:
+def move_zeroes_further_optimized(arr: List[int])->List[int]:
     n = len(arr)
 
     writePos = 0

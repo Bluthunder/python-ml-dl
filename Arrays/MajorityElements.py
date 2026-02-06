@@ -1,5 +1,28 @@
 from typing import List
 
+
+def majority_elements_bm(nums: List[int])->int:
+    candiate = None
+    count = 0
+
+    for num in nums:
+        if count == 0:
+            candiate = num
+            count += 1
+
+        elif num == candiate:
+            count += 1
+
+        else:
+            count -+ 1
+
+    return candiate
+
+
+
+
+
+
 def majority_elements(nums: List[int])->int:
 
     """
