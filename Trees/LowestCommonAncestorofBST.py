@@ -1,5 +1,5 @@
 
-def # Definition for a binary tree node.
+# Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -21,4 +21,5 @@ class Solution:
 
             else:
                 return cur
+
             
