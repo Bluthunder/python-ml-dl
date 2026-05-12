@@ -17,7 +17,7 @@ def maximum_sliding_window(nums: List[int], k:int) -> List[int]:
         d.append(r)
 
         # remove left val from window
-        if l > d[0]:
+        if d and d[0] < l:
             d.popleft()
 
         if (r + 1) >= k:

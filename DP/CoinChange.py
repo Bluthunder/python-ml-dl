@@ -62,7 +62,7 @@ def coin_change_optimized_tabulation(coins: List[int], amount: int)->int:
             if coin <=i:
                 dp[i] = min(dp[i], dp[i-coin]+1)
 
-    return -1 if dp[amount] > amount else dp[amount]
+    return -1 if dp[amount] > amount  else dp[amount]
 
 
 if __name__ == '__main__':
