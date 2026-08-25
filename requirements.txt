@@ -1,2 +1,5 @@
 numpy
 torch
+dask[complete]
+dask-ml
+mimesis
